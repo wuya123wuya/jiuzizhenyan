@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jd京东</title>
+    <style media="screen">
+      .w {
+        width: 1190px;
+        margin: 0 auto;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul li {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: #666;
+      }
+      .head_nav {
+        background: black;
+        height: 80px;
+      }
+      .head_nav .tu {
+        background: url("./shanghe/jd1.jpg") no-repeat;
+        width: 1190;
+        height: 80px;
+      }
+      .head_zaitu {
+        background-color: #e3e4e5;
+        height: 31px;
+      }
+      .head_zaitu ul li {
+        float: right;
+
+      }
+      .head_zaitu a{
+          color: #999;
+          height: 30px;
+          line-height: 30px;
+          font-size: 8px;
+      }
+      .head_dahezi {
+        width: 1190px;
+        height: 170px;
+        /*border: 1px solid red;*/
+        margin: -31px auto;
+      }
+      .head_dahezi .shuxian {
+        width: 231px;
+        height: 8px;
+        border-left: 1px solid #666;
+        border-right: 1px solid #666;
+        margin: 47px 456px;
+      }
+      .head_dahezi .zibox {
+        width: 490px;
+        height: 10px;
+        /*border: 1px solid red;*/
+        margin: 40px auto;
+      }
+      .head_dahezi .erwei {
+        width: 80px;
+        height: 80px;
+        background: url("./shanghe/jd3.png") center center;
+        float: right;
+        margin: -102px 1px;
+      }
+      .head_dahezi .ximian {
+        width: 650px;
+        height: 50px;
+        /*border: 1px solid red;*/
+        margin: 24px 241px;
+      }
+      .head_dahezi .wukong {
+        width: 190px;
+        height: 40px;
+        background: url("./shanghe/jd4.jpg");
+        margin: -76px 1000px;
+      }
+      .head_dahezi .ximian a {
+        color: #000;
+        height: 50px;
+        line-height: 50px;
+        font: 18px bolder;
+        padding: 7px 7px;
+      }
+      .head_dahezi .ximian a:hover {
+        color:red;
+      }
+      .head_dahezi .zibox a {
+        color: #999;
+        height: 30px;
+        line-height: 30px;
+        font-size: 8px;
+      }
+
+
+      .head_dahezi .logo {
+        width: 190px;
+        height: 170px;
+        background: url("./shanghe/jd2.png") #666;
+      }
+      .head_dahezi .sousuo {
+        width: 490px;
+        height: 40px;
+        border: 1px solid red;
+        margin: -105px auto;
+      }
+      .head_dahezi .sousuo .bai {
+        width: 420px;
+        height: 40px;
+        /*border: 1px solid red;*/
+        float: left;
+      }
+      .head_dahezi .sousuo .button {
+        width: 68px;
+        height: 40px;
+        background-color: red;
+        float: right;
+      }
+      .head_dahezi .gouwu {
+        width: 180px;
+        height: 40px;
+        background: #666;
+        position: relative;
+        top: 64px;
+        left:876px;
+      }
+      .head_dahezi .gouwu p{
+        text-align: center;
+        padding: 6px;
+      }
+
+
+      .head_kenan {
+        width: 1190px;
+        height: 480px;
+        /*border: 1px solid red;*/
+      }
+      .head_xiaolan {
+        width: 1190px;
+        height: 30px;
+        /*border: 1px solid red;*/
+      }
+      .head_kenan .huiyuan {
+        width: 190px;
+        height: 480px;
+        /*border: 1px solid green;*/
+        background: #667;
+        float: left;
+      }
+      .head_kenan .xinyi {
+        width: 190px;
+        height: 480px;
+        /*border: 1px solid green;*/
+
+        float: right;
+      }
+      .head_kenan .xinyi .gin {
+        width: 190px;
+        height: 116px;
+        /*border-bottom: 1px solid black;*/
+        float: left;
+        margin: 0 0;
+      }
+      .head_kenan .xinyi .gin .tou {
+        width: 74px;
+        height: 24px;
+        float: right;
+        border: 1px solid red;
+        margin: 0 3px;
+      }
+
+      .head_kenan .xinyi .gin .an {
+        width: 74px;
+        height: 24px;
+        float: left;
+        border: 1px solid red;
+        margin: 0px 15px;
+      }
+      .head_kenan .xinyi .gin .futejia {
+        width: 50px;
+        height: 50px;
+        /*border: 1px solid black;*/
+        background: url("./shanghe/jd8.png");
+        background-position: -70px 0;
+        float: left;
+        margin: 12px -67px;
+      }
+      .gin img {
+        width: 50px;
+        height: 50px;
+        float: left;
+        margin: 12px 17px;
+
+      }
+      /*.head_kenan .xinyi .gin .rum {
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+        background: url("./shanghe/jd9.png") center;
+        background-position: -70px 0;
+        float: left;
+        margin: 13px -67px;
+        position: relative;
+        top: 0;
+        left: 0;
+      }*/
+      .head_kenan .xinyi .gin .jier {
+        width: 102px;
+        height: 20px;
+        /*border: 1px solid red;*/
+        /*float: left;*/
+        margin: 17px 72px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .head_kenan .xinyi .gin .maoli {
+        width: 102px;
+        height: 20px;
+        /*border: 1px solid red;*/
+        float: left;
+        position: relative;
+        left: 0px;
+        top: -13px;
+      }
+      .head_kenan .xinyi .gin .maoli a {
+        padding: 0 0;
+      }
+      .head_kenan .xinyi .gin .jier p {
+
+        padding: 0 0;
+        font-size: 8px;
+        color: #666;
+              /*text-overflow: ellipsis;*/
+      }
+
+      .head_kenan .xinyi .beijie {
+        width: 190px;
+        height: 154px;
+        border-bottom:  1px solid black;
+        border-top: 1px solid black;
+        float: right;
+        margin: 0 -2px;
+      }
+      .head_kenan .xinyi .beijie .tianshi {
+        width: 160px;
+        height: 120px;
+        border-top: 1px solid #666;
+        margin: 23px 13px;
+
+      }
+      .head_kenan .xinyi .beijie li {
+        float: left;
+        padding: 0 0;
+        /*font-size: 9px;*/
+        color: #333;
+      }
+      /*.head_kenan .xinyi .beijie*/ .tianshi p {
+        padding: 2px 0;
+      }
+      .tianshi a {
+        font-size: 8px;
+        color: #666;
+      }
+      .tianshi a:hover{
+        color: red;
+      }
+
+
+      .head_kenan .xinyi .xueli {
+        width: 190px;
+        height: 204px;
+        /*border: 1px solid black;*/
+        float: left;
+        margin: -1px -1px;
+      }
+
+      /*.xueli .mingmei {
+        width: 47px;
+        height: 69px;
+        border: 1px solid #666;
+        float:left;
+        margin: -1px -1px;
+      }
+      .xueli .mingmei1 {
+        width: 47px;
+        height: 69px;
+        border: 1px solid #666;
+        float:left;
+        margin: -1px -1px;
+      }
+      .xueli .mingmei2 {
+        width: 47px;
+        height: 69px;
+        border: 1px solid #666;
+        float:left;
+        margin: -1px -1px;
+      }
+      .xueli .mingmei3 {
+        width: 47px;
+        height: 69px;
+        border: 1px solid #666;
+        float:left;
+        margin: -1px -1px;
+      }
+      .xueli .mingmei4 {
+        width: 47px;
+        height: 69px;
+        border: 1px solid #666;
+        float:left;
+        margin: -1px -1px;
+      }
+      .xueli .mingmei5 {
+        width: 47px;
+        height: 69px;
+        border: 1px solid #666;
+        float:left;
+        margin: -1px -1px;
+      }
+      .xueli .mingmei6 {
+        width: 47px;
+        height: 69px;
+        border: 1px solid #666;
+        float:left;
+        margin: -1px -1px;
+      }
+      .xueli .mingmei7 {
+        width: 47px;
+        height: 69px;
+        border: 1px solid #666;
+        float:left;
+        margin: -1px -1px;
+      }
+      .xueli .mingmei8 {
+        width: 47px;
+        height: 69px;
+        border: 1px solid #666;
+        float:left;
+        margin: -1px -1px;
+      }
+      .xueli .mingmei9 {
+        width: 47px;
+        height: 69px;
+        border: 1px solid #666;
+        float:left;
+        margin: -1px -1px;
+      }
+      .xueli .mingmei10 {
+        width: 47px;
+        height: 69px;
+        border: 1px solid #666;
+        float:left;
+        margin: -1px -1px;
+      }
+      .xueli .mingmei11 {
+        width: 47px;
+        height: 69px;
+        border: 1px solid #666;
+        float:left;
+        margin: -1px -1px;
+      }*/
+      .xueli .list{
+        width: 192px;
+        height: 210px;
+        overflow: hidden;
+        margin-left: -1px;
+      }
+      .xueli .li {
+        width: 46px;
+        height: 68px;
+        float: left;
+        overflow: hidden;
+        position: relative;
+        border-top: 1px solid #e7e7e7;
+        border-left: 1px solid #efefef;
+        text-align: center;
+      }
+      .xueli .a {
+        padding-top:14px;
+        height: 55px;
+        display: block;
+      }
+      .xueli .i {
+        background-image: url("./shanghe/jd10.png");
+        background-size: 156px 148px;
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+        background-position: 0 -88px;
+        margin: 0 auto;
+        display: block;
+      }
+      .xueli .span {
+        text-align: center;
+        font-size: 6px;
+      }
+
+
+      .head_kenan .gongteng {
+        width: 790px;
+        height: 480px;
+        /*border: 1px solid pink;*/
+        position: relative;
+        left: 199px;
+        /*top:1px;*/
+      }
+      .head_kenan .gongteng .kid {
+        width: 790px;
+        height: 340px;
+        /*border: 1px solid purple;*/
+        background: url("./shanghe/lianjia.png") center;
+      }
+      .head_kenan .gongteng .jide {
+        width: 390px;
+        height: 136px;
+        /*border: 1px solid #123;*/
+        background: url("./shanghe/lianer.png") center;
+        float: left;
+        margin: 4px -190px;
+      }
+      .head_kenan .gongteng .kuaidou {
+        width: 390px;
+        height: 136px;
+        /*border: 1px solid #125;*/
+        background: url("./shanghe/lianer.png") center;
+        float: right;
+          margin: 4px -2px;
+      }
+      .head_kenan .huiyuan li {
+        color: white;
+        height: 10px;
+        line-height: 10px;
+        font: 10px bolder;
+        padding: 10px 10px;
+      }
+      .huiyuan a {
+        color: #fff;
+      }
+
+
+      .head_qiqi {
+        width: 1190px;
+        height: 10px;
+        /*border: 1px solid green;*/
+      }
+      .head_hongbiao {
+        width: 1190px;
+        height: 55px;
+        background: url("./shanghe/jd5.png");
+      }
+      .head_hongbiao .jiao {
+        width: 18px;
+        height: 18px;
+        /*border: 1px solid black;*/
+        background: url("./shanghe/jd6.png");
+        background-position: -194px -1557px;
+      }
+      .head_hongbiao .zhong {
+        width:34px;
+        height: 40px;
+        background: url("./shanghe/jd6.png");
+        background-position: 0 -40px;
+        /*border:1px solid black;*/
+        margin: -10px 40px;
+      }
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="head">
+      <div class="head_nav ">
+        <div class="tu w">
+
+        </div>
+
+      </div>
+      <div class="head_zaitu ">
+        <ul class="w">
+          <li><a href="#">手机京东｜</a></li>
+          <li><a href="#">网站导航^｜</a></li>
+          <li><a href="#">客户服务^｜</a></li>
+          <li><a href="#">企业采购｜</a></li>
+          <li><a href="#">京东会员｜</a></li>
+          <li><a href="#">我的京东^｜</a></li>
+          <li><a href="#">我的订单｜</a></li>
+          <li><a href="#" style="color:red;">免费注册｜</a></li>
+          <li><a href="#">你好，请登录｜</a></li>
+        </ul>
+
+      </div>
+      <div class="head_dahezi">
+        <div class="logo"></div>
+        <div class="sousuo">
+          <div class="bai">
+            <p></p>
+
+          </div>
+          <div class="button">
+
+          </div>
+
+
+
+        </div>
+        <div class="gouwu">
+          <p>我的购物车</p>
+
+        </div>
+        <div class="zibox">
+          <a style="color:red;">医院秒杀</a>
+          <a href="#">平板电脑</a>
+          <a href="#">农资周年庆</a>
+          <a href="#">七夕聚会</a>
+          <a href="#">抵制５折</a>
+          <a href="#">爱是剥皮九</a>
+          <a href="#">黄酒</a>
+          <a href="#">银屏</a>
+
+        </div>
+        <div class="erwei">
+        </div>
+        <div class="ximian">
+          <a href="#">秒杀</a>
+          <a href="#">瞬杀</a>
+          <a href="#">绝杀</a>
+          <a href="#">误杀</a>
+          <a href="#">五杀</a>
+          <a href="#">第一滴血</a>
+          <a href="#">无人可当</a>
+          <a href="#">超身</a>
+          <a href="#">到沙发到沙发</a>
+
+        </div>
+        <div class="wukong">
+        </div>
+        <div class="shuxian">
+
+        </div>
+
+      </div>
+      <div class="head_xiaolan w">
+      </div>
+      <div class="head_kenan w">
+        <div class="huiyuan">
+          <ul>
+            <li><a href="#">家用电器</a></li>
+            <li><a href="#">手机/运营商/数码</a></li>
+            <li><a href="#">电脑/办公</a></li>
+            <li><a href="#">家居/家具/家装/厨具</a></li>
+            <li><a href="#">男装/女装/童装/内衣</a></li>
+            <li><a href="#">美状护肤/宠物</a></li>
+            <li><a href="#">女鞋/箱包/钟表/珠宝</a></li>
+            <li><a href="#">男鞋/运动/户外</a></li>
+            <li><a href="#">汽车/汽车用品</a></li>
+            <li><a href="#">母婴/玩具</a></li>
+            <li><a href="#">时评/剧</a></li>
+            <li><a href="#">发射的发/东方</a></li>
+            <li><a href="#">方法/东方</a></li>
+            <li><a href="#">到沙发的/的方式都发</a></li>
+            <li><a href="#">大饭店发/的方式都发</a></li>
+            <li><a href="#">的发放</a></li>
+          </ul>
+
+        </div>
+        <div class="xinyi">
+          <div class="gin">
+            <img src="./shanghe/jd9.jpg" width="50px" height="50px" alt="">
+            <div class="futejia"></div>
+            <div class="jier">
+               <p>hi,欢迎来到今冬！</p>
+            </div>
+            <div class="maoli">
+              <a href="#">登录</a>  <a href="#">注册</a>
+            </div>
+            <div class="tou">
+              <p style="color:red">新人福利</p>
+
+            </div>
+            <div class="an">
+              <p style="color:red">PLUS会员</p>
+
+            </div>
+
+
+          </div>
+          <div class="beijie">
+            <ul>
+              <li><a href="#" style="color:#333;">促销｜</a></li>
+              <li><a href="#" style="color:#333;">公告 <span> </span></a></li>
+              <li style="float:right"><a href="#" style="color:#333;">更多</a></li>
+            </ul>
+            <div class="tianshi">
+              <!-- <p><a href="#">天天在</a></p> -->
+                <p><a href="#">大饭店发</a></p>
+                  <p><a href="#">大饭店发</a></p>
+                    <p><a href="#">各个地方哥</a></p>
+                      <p><a href="#">更广泛哥</a></p>
+                        <p><a href="#">该广告的</a></p>
+
+            </div>
+
+          </div>
+          <div class="xueli">
+            <ul class="list">
+              <li class="li">
+                <a href="#" class="a">
+                  <i class="i"></i>
+                  <span class="span">荒废</span>
+                </a>
+              </li>
+              <li class="li">
+                <a href="#" class="a">
+                  <i class="i"></i>
+                  <span class="span">荒废</span>
+                </a>
+              </li>
+              <li class="li">
+                <a href="#" class="a">
+                  <i class="i"></i>
+                  <span class="span">荒废</span>
+                </a>
+              </li>
+              <li class="li">
+                <a href="#" class="a">
+                  <i class="i"></i>
+                  <span class="span">荒废</span>
+                </a>
+              </li>
+              <li class="li">
+                <a href="#" class="a">
+                  <i class="i"></i>
+                  <span class="span">荒废</span>
+                </a>
+              </li>
+              <li class="li">
+                <a href="#" class="a">
+                  <i class="i"></i>
+                  <span class="span">荒废</span>
+                </a>
+              </li>
+              <li class="li">
+                <a href="#" class="a">
+                  <i class="i"></i>
+                  <span class="span">荒废</span>
+                </a>
+              </li>
+              <li class="li">
+                <a href="#" class="a">
+                  <i class="i"></i>
+                  <span class="span">荒废</span>
+                </a>
+              </li>
+              <li class="li">
+                <a href="#" class="a">
+                  <i class="i"></i>
+                  <span class="span">荒废</span>
+                </a>
+              </li>
+              <li class="li">
+                <a href="#" class="a">
+                  <i class="i"></i>
+                  <span class="span">荒废</span>
+                </a>
+              </li>
+              <li class="li">
+                <a href="#" class="a">
+                  <i class="i"></i>
+                  <span class="span">荒废</span>
+                </a>
+              </li>
+              <li class="li" class="a">
+                <a href="#" class="a">
+                  <i class="i"></i>
+                  <span class="span">荒废</span>
+                </a>
+              </li>
+            </ul>
+            <!-- <div class="mingmei">
+
+            </div>
+            <div class="mingmei1">
+
+            </div>
+            <div class="mingmei2">
+
+            </div>
+            <div class="mingmei3">
+
+            </div>
+            <div class="mingmei4">
+
+            </div>
+            <div class="mingmei5">
+
+            </div>
+            <div class="mingmei6">
+
+            </div>
+            <div class="mingmei7">
+
+            </div>
+            <div class="mingmei8">
+
+            </div>
+            <div class="mingmei9">
+
+            </div>
+            <div class="mingmei10">
+
+            </div>
+            <div class="mingmei11">
+
+            </div> -->
+
+          </div>
+        </div>
+        <div class="gongteng">
+          <div class="kid">
+
+          </div>
+          <div class="jide">
+
+          </div>
+          <div class="kuaidou">
+
+          </div>
+
+        </div>
+
+      </div>
+      <div class="head_qiqi w">
+      </div>
+      <div class="head_hongbiao w">
+        <div class="jiao">
+
+        </div>
+        <div class="zhong">
+
+        </div>
+
+      </div>
+
+
+
+    </div>
+  </body>
+</html>

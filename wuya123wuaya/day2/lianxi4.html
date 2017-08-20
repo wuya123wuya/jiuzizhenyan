@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>后代选择器</title>
+    <style media="screen">
+      div p span{
+        color:red;
+      }
+      .one p span{
+        color:green;
+      }
+      #hid p span{
+        color:yellow;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="">
+      <p>
+        <span> div>p>span </span>
+      </p>
+    </div>
+    <div class="">
+      <p>
+        <span>dfdffd</span>
+      </p>
+    </div>
+    <p>dfdff</p>
+    <div class="">
+
+    </div>
+    <span>ddd</span>
+    <h1 class="one">
+      <p>
+        <span>dfdfd</span>
+      </p>
+    </h1>
+    <h2 id="hid">
+      <p>
+        <span>dfdsfdfsd</span>
+      </p>
+    </h2>
+  </body>
+</html>

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>破产手机</title>
+    <style media="screen">
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .w {
+        width: 568px;
+        margin: 0 auto;
+      }
+      a {
+        text-decoration: none;
+      }
+      .head_nav {
+        background-image: url("./shanghe/head_bg.png");
+        height: 117px;
+      }
+      .head_nav .box {
+        height: 115px;
+        width: 568px;
+        /*border: 1px solid red;*/
+      }
+      .head_nav .box .box1 {
+        height: 55px;
+        width: 179;
+        /*border: 1px solid green;*/
+        float: left;
+        margin-top: 7px;
+      }
+      .head_nav .box .box3{
+        width: 568px;
+        height: 25px;
+        float: left;
+        /*border: 1px solid green;*/
+      }
+      .head_nav a {
+        color: black;
+        padding: 0 10px;
+      }
+      .head_nav a:hover{
+        color: #23ac38;
+      }
+      .head_nav .box .box2 {
+        height: 24px;
+        width: 179px;
+        /*border: 1px solid green;*/
+        float: right;
+        margin-top: 7px;
+      }
+      .head_nav .box .box2 .search_input{
+        width: 144px;
+        height: 22px;
+        border: 1px solid green;
+        float: left;
+      }
+      .head_nav .box .box2 .search_button{
+        width: 33px;
+        height: 24px;
+        background-image: url("./shanghe/input_r1_c2.png");
+        float: right;
+      }
+      h5 {
+        float: left;
+      }
+      ul li {
+        list-style: none;
+      }
+
+
+      .head_middle {
+        width: 568px;
+        height: 590px;
+        background: url("./shanghe/banner.png") center center;
+        background-repeat: no-repeat;
+      }
+      .head_diandian {
+        width:34px;
+        height: 14px;
+        background: url("./shanghe/point.png") center center;
+        background-repeat: no-repeat;
+        /*border: 1px solid red;*/
+      }
+      .head_gonggao {
+        height: 23px;
+        background: gray;
+      }
+      .head_gonggao .left {
+        height: 19px;
+        width: 568px;
+        /*background-color: red;*/
+        margin: 0 auto;
+      }
+      .head_gonggao .left .zi {
+        height: 17px;
+        line-height: 17px;
+        float: left;
+        display: inline-block;
+        margin: 3px auto;
+      }
+      .head_gonggao .left .tu {
+        height: 17px;
+        line-height: 17px;
+        float: right;
+        margin: 3px auto;
+      }
+
+
+
+
+      .head_jianxi {
+        width: 568px;
+        height: 160px;
+        /*border: 1px solid red;*/
+      }
+      .head_jianxi .one {
+        width: 184px;
+        height: 158px;
+
+        border: 1px solid black;
+        float: left;
+        margin: -1px 1px;
+
+      }
+      .head_jianxi .one .diyi {
+        background: url("./shanghe/canvas_r4_c4.png") no-repeat  left center;
+        width: 184px;
+        height: 15px;
+        margin: 6px 6px;
+      }
+      .head_jianxi .one .xinwen {
+        width: 160px;
+        height: 15px;
+        margin: 6px 12px;
+        /*border: 1px solid red;*/
+        margin: -22px 30px;
+        float: left;　
+      }
+      .head_jianxi .one .neirong{
+        width: 160px;
+        height: 130px;
+        margin: -12px 26px;
+        background: url("./shanghe/taobao.jpg") no-repeat left center;
+      }
+      .head_jianxi .one .disan {
+        width: 160px;
+        height: 130px;
+        margin: 8px 26px;
+        /*border: 1px solid red;*/
+      }
+      .head_jianxi .one .disan .box {
+        color: #000;
+        border-left: 4px solid green;
+        padding-left: 10px;
+        margin: 1px 1px;
+      }
+
+
+      .head_jianxi .two {
+        width: 184px;
+        height: 158px;
+
+        border: 1px solid black;
+        float: left;
+        margin: -1px 1px;
+
+      }
+      .head_jianxi .two .diyi {
+        background: url("./shanghe/canvas_r4_c4.png") no-repeat  left center;
+        width: 184px;
+        height: 15px;
+        margin: 6px 6px;
+      }
+      .head_jianxi .two .xinwen {
+        width: 160px;
+        height: 15px;
+        margin: 6px 12px;
+        /*border: 1px solid red;*/
+        margin: -39px 30px;
+        float: left;
+　　　　　
+      }
+      .head_jianxi .two .dierzi {
+        width: 150px;
+        height: 130px;
+        margin: -12px 26px;
+      }
+      .head_jianxi .two .dierzi h4{
+        height: 20px;
+        line-height: 20px;
+        border-bottom: 1px dashed #000;
+      }
+
+
+      .head_bottom {
+        height: 264px;
+        background: url("./shanghe/canvas_r4_c2.png");
+      }
+      .head_bottom .heibox {
+        width: 568px;
+        height: 218px;
+        /*border: 1px solid red;*/
+      }
+      .head_bottom .heibox .top {
+        width: 51px;
+        height: 27px;
+        background: url("./shanghe/canvas_r4_c3.png");
+        float: right;
+      }
+      .head_bottom .heibox ul {
+        float: left;
+        margin: 60px 42px;
+        font: 10px "宋体" black;
+      }
+      .head_bottom .heibox ul a {
+        color: white;
+      }
+      .head_bottom .redbox {
+        width: 568px;
+        height: 46px;
+        /*border: 1px solid pink;*/
+      }
+      .head_bottom .redbox .f{
+        width: 400px;
+        height: 20px;
+        /*border: 1px solid pink;*/
+        text-align: center;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="head">
+      <div class="head_nav">
+        <div class="w">
+          <div class="box">
+            <div class="box1">
+              <img src="./shanghe/logo.png" alt="">
+
+            </div>
+            <div class="box2">
+              <div class="search_input">
+
+              </div>
+              <div class="search_button">
+
+              </div>
+            </div>
+            <div class="box3">
+              <a href="#">浮动发</a>
+              <a href="#">大饭店</a>
+              <a href="#">大饭店发</a>
+              <a href="#">俄方俄方</a>
+              <a href="#">而让</a>
+              <a href="#">而让冉冉</a>
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </div>
+      <div class="head_middle w"></div>
+      <div class="head_diandian w"></div>
+      <div class="head_gonggao ">
+        <div class="left">
+          <div class="zi">
+            <h5>最新公告：</h5>大饭店方式方法发射的方法发;
+          </div>
+          <div class="tu">
+            <img src="./shanghe/share.png" alt="">
+          </div>
+
+        </div>
+
+      </div>
+      <div class="head_jianxi w">
+        <div class="one">
+          <div class="diyi"></div>
+          <div class="xinwen">
+            <h5>新闻发布</h5>
+          </div>
+          <div class="neirong">
+
+          </div>
+
+        </div>
+        <div class="two">
+          <div class="diyi"></div>
+　　　　　　<div class="xinwen">
+　　　　　　   <h5>新闻中心</h5>
+　　　　　　</div>
+          <div class="dierzi">
+            <ul>
+              <li><a href="#">fgfdg</a></li>
+              <li><a href="#">gdg</a></li>
+              <li><a href="#">fgdfgd</a></li>
+              <li><a href="#">fdgg</a></li>
+              <li><a href="#">gdg</a></li>
+              <li><a href="#">dgdgg</a></li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="one">
+          <div class="diyi">
+
+          </div>
+          <div class="xinwen">
+            <h5>技术与支持</h>
+          </div>
+          <div class="disan">
+            <div class="box">
+              <h4>fgfdgdfg</h4>
+
+            </div>
+            <div class="box">
+              <h4>fgfdgdfg</h4>
+
+            </div>
+            <div class="box">
+              <h4>fgfdgdfg</h4>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="head_bottom">
+        <div class="heibox w">
+          <div class="top">
+
+          </div>
+          <ul>
+            <li><a href="#">大饭店</a></li>
+            <li><a href="#">s阿斯顿三段</a></li>
+            <li><a href="#"></a></li>
+
+          </ul>
+          <ul>
+            <li><a href="#">所得到的</a></li>
+            <li><a href="#">萨达萨达的</a></li>
+            <li><a href="#">三段萨达的</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">是大势的</a></li>
+            <li><a href="#">似的似的</a></li>
+            <li><a href="#">阿斯顿的</a></li>
+          </ul>
+        </div>
+        <div class="redbox w">
+
+            <div class="f w">
+              <p>ddddddddddd</p>
+
+
+            </div>
+
+
+
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </body>
+</html>
